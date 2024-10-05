@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles for Book Library */
+
+/* Example: Styles for the book cover images */
+.book-cover {
+    @apply w-full h-auto rounded-md shadow-md; /* Apply Tailwind utility classes */
+}
+
+/* Example: Styles for the book title */
+.book-title {
+    @apply text-lg font-semibold text-gray-800 dark:text-gray-200; /* Adjust colors for dark mode */
+}
+
+/* Example: Styles for the author name */
+.book-author {
+    @apply text-sm text-gray-600 dark:text-gray-400; /* Subtle color for author names */
+}
+
+/* Example: Styles for the favorite button */
+.favorite-button {
+    @apply bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition; /* Favorite button styles */
+}
+
+/* Additional styles can be added here for your book library UI */
