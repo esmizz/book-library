@@ -1,13 +1,11 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+// src/main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css"; // Assuming you have Tailwind or other global styles
 
-// Create a root for the React application
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
     <App />
-    <SpeedInsights />
-  </StrictMode>
+  </React.StrictMode>
 );
